@@ -5,18 +5,22 @@ public class Empleado extends Persona {
     public int categoria;
     public int anyos;
 
-    public Empleado(String nombre, String dni, char sexo) {
+    public Empleado(String nombre, String dni, char sexo) throws DatosNoCorrectosException {
         super(nombre, dni, sexo);
         categoria = 1;
         anyos = 0;
 
     }
 
-    public Empleado(String nombre, String dni, char sexo, int categoria, int anyos) {
+    public Empleado(String nombre, String dni, char sexo, int categoria, int anyos) throws DatosNoCorrectosException {
         super(nombre, dni, sexo);
         if (anyos > 0) {
             this.categoria = categoria;
             this.anyos = anyos;
+        }
+        else{
+            throw new  DatosNoCorrectosException("Años negativos");
+
         }
     }
 
