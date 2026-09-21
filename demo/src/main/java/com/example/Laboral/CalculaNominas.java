@@ -1,6 +1,9 @@
 package com.example.Laboral;
 
 public class CalculaNominas {
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
         try {
             Empleado em1 = new Empleado("James Gosling", "32000032G", 'm', 4, 7);
@@ -19,6 +22,11 @@ public class CalculaNominas {
 
     }
 
+    /** 
+     * @param em1
+     * @param em2
+     * @return String
+     */
     private static String escribeMetodo(Empleado em1, Empleado em2) {
         Nomina nomina = new Nomina();
 

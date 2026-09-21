@@ -19,11 +19,14 @@ public class Empleado extends Persona {
             this.anyos = anyos;
         }
         else{
-            throw new  DatosNoCorrectosException("Años negativos");
+            throw new  DatosNoCorrectosException("Datos no Correctos");
 
         }
     }
 
+    /** 
+     * @param newcategoria
+     */
     public void setCategoria(int newcategoria) {
         if (newcategoria >= 1 && newcategoria <= 10) {
             categoria = newcategoria;
@@ -31,6 +34,9 @@ public class Empleado extends Persona {
 
     }
 
+    /** 
+     * @return int
+     */
     public int getCategoria() {
         return categoria;
     }

@@ -8,6 +8,9 @@ public class DatosNoCorrectosException extends Exception {
         mensaje = Message;
     }
 
+    /** 
+     * @return String
+     */
     public String getMessage() {
         return Message;
 

@@ -12,7 +12,7 @@ public class Persona {
             this.dni = dni;
             this.sexo = sexo;
         } else {
-            throw new DatosNoCorrectosException("Datos erroneos");
+            throw new DatosNoCorrectosException("Datos no Correctos");
         }
 
     }
@@ -22,11 +22,14 @@ public class Persona {
             this.nombre = nombre;
             this.sexo = sexo;
         } else {
-            throw new DatosNoCorrectosException("Datos erroneos");
+            throw new DatosNoCorrectosException("Datos no Correctos");
         }
 
     }
 
+    /** 
+     * @param dni
+     */
     public void setDni(String dni) {
         this.dni = dni;
     }
