@@ -1,4 +1,4 @@
-package com.example.Laboral;
+package Laboral;
 
 public class Empleado extends Persona {
 

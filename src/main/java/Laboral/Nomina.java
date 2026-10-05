@@ -1,4 +1,4 @@
-package com.example.Laboral;
+package Laboral;
 
 public class Nomina {
     private static final int SUELDO_BASE[] = { 50000, 70000, 90000, 110000, 130000,
